@@ -9,7 +9,7 @@
 # --------------------------
 title: Jason's Blog                          # the main title
 
-tagline: Just another blog   # it will display as the sub-title
+tagline: I do stuff   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   blog, portfolio, sidebar
