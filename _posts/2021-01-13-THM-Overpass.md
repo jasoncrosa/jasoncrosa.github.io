@@ -18,5 +18,6 @@ tags: [thm, overpass, walkthrough]     # TAG names should always be lowercase
 11. We find a cronjob running every minute as root and /etc/hosts file is writable by our user.
 12. Let's use this cronjob to create a reverse shell as root user.
 13. Reproduce the directory structure of the cronjob call on your attack machine. Create the buildscript.sh file with a reverse shell following the same directory structure and start a web server at the root path to match the bash call done by the cronjob. Don't forget to start your netcat listener to recover the reverse shell.
-14. After some seconds (1min maximum) we have a root shell available on netcat and we can found the root flag on the home directory.
+14. Update /etc/hosts file to make a local resolution of overpass.thm with your own attack machine.
+15. After some seconds (1min maximum) we have a root shell available on netcat and we can found the root flag on the home directory.
 
