@@ -2,7 +2,7 @@
 title: THM Overpass
 date: 2021-01-13 22:50:00 +0000
 categories: [Security, TryHackMe]
-tags: [thm, overpass, walkthrough]     # TAG names should always be lowercase
+tags: [thm, overpass, writeup]     # TAG names should always be lowercase
 ---
 
 1. Connect on the URL, we found a website. Quick browsing allow us to see that there is some files available on the download section.
