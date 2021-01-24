@@ -18,16 +18,16 @@ Hereafter is my own progression.
 
 # Level 1 - Intro
 - [:+1:] OpenVPN https://tryhackme.com/room/openvpn
-- [ ] Welcome https://tryhackme.com/jr/welcome
-- [ ] Intro to Researching https://tryhackme.com/room/introtoresearch
-- [ ] The Hacker Methodology https://tryhackme.com/room/hackermethodology
-- [ ] Learn Linux https://tryhackme.com/module/linux-fundamentals
-- [ ] Crash Course Pentesting https://tryhackme.com/room/ccpentesting
+- [👍] Welcome https://tryhackme.com/jr/welcome
+- [:hourglass:] Intro to Researching https://tryhackme.com/room/introtoresearch
+- [:hourglass_flowing_sand:] The Hacker Methodology https://tryhackme.com/room/hackermethodology
+- [⏳] Learn Linux https://tryhackme.com/module/linux-fundamentals
+- [:x:] Crash Course Pentesting https://tryhackme.com/room/ccpentesting
 
 **Introductory CTFs to get your feet wet**
 
-- [ ] Google Dorking https://tryhackme.com/room/googledorking
-- [ ] OHsint https://tryhackme.com/room/ohsint
+- [:red_circle:] Google Dorking https://tryhackme.com/room/googledorking
+- [🔴] OHsint https://tryhackme.com/room/ohsint
 - [ ] Shodan.io https://tryhackme.com/room/shodan
 
 # Level 2 - Tooling
