@@ -1,5 +1,5 @@
 ---
-title: THM The Cop Caper
+title: THM The Cod Caper
 date: 2021-01-13 22:50:00 +0000
 categories: [Security, TryHackMe]
 tags: [thm, codcapper, writeup]     # TAG names should always be lowercase
@@ -40,4 +40,7 @@ Task 9: Binary-Exploitation: The pwntools way
 Nothing to do, just follow the room description and do it to understand
 
 Task 10: Finishing the job
+hashcat -a 0 -m 1800 root.hash /usr/share/wordlists/rockyou.txt
+$6$rFK4s/vE$zkh2/RBiRZ746OW3/Q/zqTRVfrfYJfFjFc2/q.oYtoF1KglS3YWoExtT3cvA3ml9UtDS8PFzCk902AsWx00Ck.:l*******h
+<!-- $6$rFK4s/vE$zkh2/RBiRZ746OW3/Q/zqTRVfrfYJfFjFc2/q.oYtoF1KglS3YWoExtT3cvA3ml9UtDS8PFzCk902AsWx00Ck.:love2fish -->
 
