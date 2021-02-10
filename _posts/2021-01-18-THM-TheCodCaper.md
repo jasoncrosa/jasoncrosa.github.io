@@ -7,6 +7,7 @@ tags: [thm, codcapper, writeup]     # TAG names should always be lowercase
 
 ## Task 5
 > Command Execution
+
 We got access to a web page where we can run some linux command and receive the result directly in our webpage.
 Try basic stuf like pwd or ls give us some result.
 ```console
@@ -39,6 +40,7 @@ After some research inside the box, we found an interresting folder in ``` /var 
 
 ## Task 6
 > LinEnum
+
 Choose a metod to send LinEnum.sh file into the target system (SCP or setup a simpleHTTPServer inside your own attack machine).
 Then, upgrade the permission with ``` chmod +x LinEnum.sh ``` and then execute ``` LinEnum.sh ``` and, as specified inside the room, check the SUID files analysis result. You will easily found the requested one.
 
@@ -46,18 +48,22 @@ Try to execute this file without success. It seems that the file is waiting for 
 
 ## Task 7
 > pwndbg
+
 Nothing to do, just follow the room description and do it to understand
 
 ## Task 8
 > Binary-Exploitation: Manually
+
 Nothing to do, just follow the room description and do it to understand
 
 ## Task 9
 > Binary-Exploitation: The pwntools way
+
 Nothing to do, just follow the room description and do it to understand
 
 ## Task 10
 > Finishing the job
+
 ```console
 hashcat -a 0 -m 1800 root.hash /usr/share/wordlists/rockyou.txt
 ```
